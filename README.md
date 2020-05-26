@@ -1,4 +1,4 @@
-# day-lapu
+# vue-paw
 
 ## Project setup
 ```
