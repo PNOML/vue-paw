@@ -99,41 +99,21 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="nav-animal-group">
-        <div class="main-wrapper">
+    <main class="purchase-container">
+      <div class="main-wrapper ">
+        <Sidebar />
+        <div class="sale-block">
           <Navbar />
+          <section class="catalog">
+            <GoodsItem
+              v-for="item in GOODS"
+              :key="item.article"
+              v-bind:goods_data="item"
+              @sendArticle="showConsole"
+            />
+          </section>
         </div>
-      </section>
-      <section class="main-board">
-        <div class="main-wrapper">
-          <h1>Зоомагазин</h1>
-          <h2>Мы позаботимся о оздоровье Вашего друга</h2>
-          <img
-            src="images/main-bg 1.png"
-            class="main-board_img"
-          >
-        </div>
-      </section>
-      <section class="bonus-game">
-        <div class="main-wrapper">
-          <h1>Дал на лапу - получил скидку 3%</h1>
-          <div class="game-buttons">
-            <button>
-              <fa-icon
-                :icon="['fas', 'bone']"
-                size="2x"
-              />
-            </button>
-            <button>
-              <fa-icon
-                :icon="['fas', 'paw']"
-                size="2x"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="main-wrapper">
@@ -160,7 +140,7 @@
               <li><a
                   class="footer-links"
                   href=""
-                >Доставк</a></li>
+                >Доставка</a></li>
               <li><a
                   class="footer-links"
                   href=""
@@ -243,10 +223,39 @@
 
 <script>
 import Navbar from "@/components/app/Navbar";
+import Sidebar from "@/components/app/Sidebar";
+import GoodsItem from "@/components/app/GoodsItem";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
+  name: "goods",
   components: {
-    Navbar
+    Navbar,
+    Sidebar,
+    GoodsItem
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapGetters(["GOODS"])
+  },
+  methods: {
+    ...mapActions(["GET_GOODS_FROM_API"]),
+    showConsole(data) {
+      console.log(data);
+    }
+  },
+  mounted() {
+    this.GET_GOODS_FROM_API()
+      .then(res => {
+        if (res.data) {
+          console.log("Data has been gotten!");
+        }
+      })
+      .catch(e => {
+        console.log(e);
+      });
   }
 };
 </script>

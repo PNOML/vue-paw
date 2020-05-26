@@ -1,0 +1,28 @@
+{
+  "goods": [
+    {
+      "image": "catalog-item.jpg",
+      "description": "item 1",
+      "weight": 10,
+      "price": 100,
+      "article": "I1",
+      "avalibale": true
+    },
+    {
+      "image": "catalog-item.jpg",
+      "description": "item 2",
+      "weight": 10,
+      "price": 100,
+      "article": "I2",
+      "avalibale": true
+    },
+    {
+      "image": "catalog-item.jpg",
+      "description": "item 3",
+      "weight": 20,
+      "price": 200,
+      "article": "I3",
+      "avalibale": true
+    }
+  ]
+}
