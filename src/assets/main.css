@@ -374,7 +374,7 @@ section.bonus-game {
 /* Foot */
 
 footer {
-  height: 200px;
+  min-height: 200px;
 }
 
 .footer-logo,
