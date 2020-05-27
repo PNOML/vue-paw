@@ -8,9 +8,10 @@ export default new Vuex.Store({
   state: {
     goods: []
   },
-  mutations: {
-    SET_GOODS_TO_STATE: (state, goods) => {
-      state.goods = goods;
+  getters: {
+    GOODS(state) {
+      console.log(state.goods)
+      return state.goods;
     }
   },
   actions: {
@@ -29,12 +30,12 @@ export default new Vuex.Store({
         })
     }
   },
-  getters: {
-    GOODS(state) {
-      console.log(state.goods)
-      return state.goods;
+  mutations: {
+    SET_GOODS_TO_STATE: (state, goods) => {
+      state.goods = goods;
     }
   },
+
   modules: {
   }
 })
