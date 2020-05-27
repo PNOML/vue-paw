@@ -17,114 +17,13 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="main-wrapper">
-        <div>
-          <div>
-            <router-link to="/">
-              <img
-                src="images/footer-logo (1).png"
-                class="footer-logo"
-              >
-            </router-link>
-          </div>
-          <div class="footer-menu">
-            <h3>Меню</h3>
-            <ul>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Главная</a></li>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Товары</a></li>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Доставка</a></li>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Оплата</a></li>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Контакты</a></li>
-            </ul>
-          </div>
-          <div class="animals">
-            <h3>Животные</h3>
-            <ul>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Котейки</a></li>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Собакены</a></li>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Амфибии</a></li>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Парящие</a></li>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Другие</a></li>
-            </ul>
-          </div>
-          <div class="other-info">
-            <h3>Дополнительно</h3>
-            <ul>
-              <li><a
-                  class="footer-links"
-                  href=""
-                >Дополнительно</a></li>
-            </ul>
-          </div>
-          <div class="follow-up">
-            <h3>Следуй за нами</h3>
-            <ul>
-              <li class="footer-social-media">
-                <a href="">
-                  <fa-icon :icon="['fab', 'instagram']" />
-                </a>
-              </li>
-              <li class="footer-social-media">
-                <a href="">
-                  <fa-icon :icon="['fab', 'telegram-plane']" />
-                </a>
-              </li>
-              <li class="footer-social-media">
-                <a href="">
-                  <fa-icon :icon="['fab', 'vk']" />
-                </a>
-              </li>
-              <li class="footer-social-media">
-                <a href="">
-                  <fa-icon :icon="['fab', 'whatsapp']" />
-                </a>
-              </li>
-              <li class="footer-social-media">
-                <a href="">
-                  <fa-icon :icon="['fab', 'viber']" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "@/components/app/Header";
+import Footer from "@/components/app/Footer";
 import Navbar from "@/components/app/Navbar";
 import Sidebar from "@/components/app/Sidebar";
 import GoodsItem from "@/components/app/GoodsItem";
@@ -134,6 +33,7 @@ export default {
   name: "goods",
   components: {
     Header,
+    Footer,
     Navbar,
     Sidebar,
     GoodsItem
