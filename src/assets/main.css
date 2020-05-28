@@ -768,3 +768,27 @@ section.catalog {
   color: #fff;
   font-size: 12px;
 }
+
+/* Delivery */
+
+.delivery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.delivery-info {
+  width: 45%;
+}
+
+.delivery-map {
+  width: 45%;
+  margin-top: 15px;
+}
+
+.delivery-info>.main-wrapper>h1 {
+  margin-top: 50px;
+}
+
+.delivery-info>.main-wrapper>p {
+  margin-top: 15px;
+}

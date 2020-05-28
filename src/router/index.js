@@ -28,6 +28,13 @@ const routes = [
     name: 'Goods',
     meta: { layout: 'main' },
     component: () => import('../views/Goods.vue')
+
+  },
+  {
+    path: '/delivery',
+    name: 'Delivery',
+    meta: { layout: 'main' },
+    component: () => import('../views/Delivery.vue')
   }
 ]
 
