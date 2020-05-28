@@ -43,8 +43,9 @@
                 <div class="top-menu_links_small">Прием звонков c 10:00-21:00</div>
               </div>
             </a>
-            <a
-              href=""
+            <router-link
+              to="/delivery"
+              href="#"
               class="top-menu_links"
             >
               <fa-icon
@@ -55,7 +56,7 @@
                 <div>Бесплатная доставка</div>
                 <div class="top-menu_links_small">От 3333 руб</div>
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="search">
             <input
