@@ -792,3 +792,36 @@ section.catalog {
 .delivery-info>.main-wrapper>p {
   margin-top: 15px;
 }
+
+/* Cart */
+
+.cart>.main-wrapper>h2 {
+  margin: 25px 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80%;
+  margin: 15px 50px 15px 0;
+  border: 1px solid gainsboro;
+}
+
+.cart-item-title {
+  max-width: 200px;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.cart-item>img {
+  max-width: 100px;
+}
+
+.cart-item>div>div {
+  margin: 5px;
+}
+
+.cart-item-text-helper {
+  font-size: 12px;
+}
