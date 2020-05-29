@@ -7,8 +7,8 @@
           <Navbar />
         </div>
       </section>
-      <div class="delivery main-wrapper">
-        <section class="delivery-info">
+      <div class="main-wrapper">
+        <section class="contacts-info">
           <div class="main-wrapper">
             <h1>Контакты</h1>
             <p>8 903 322 00 12</p>
