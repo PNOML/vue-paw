@@ -1,0 +1,36 @@
+<template>
+  <div class="main-wrapper main-body">
+    <Header />
+    <main>
+      <section class="nav-animal-group">
+        <div class="main-wrapper">
+          <Navbar />
+        </div>
+      </section>
+      <div class="delivery main-wrapper">
+        <section class="delivery-info">
+          <div class="main-wrapper">
+            <h1>Контакты</h1>
+            <p>8 903 322 00 12</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <Footer />
+  </div>
+</template>
+
+<script>
+import Header from "@/components/app/Header";
+import Footer from "@/components/app/Footer";
+import Navbar from "@/components/app/Navbar";
+
+export default {
+  name: "goods",
+  components: {
+    Header,
+    Footer,
+    Navbar
+  }
+};
+</script>
