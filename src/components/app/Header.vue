@@ -20,8 +20,9 @@
             </a>
           </div>
           <div class="top-menu-center">
-            <a
-              href=""
+            <router-link
+              to="/bonuses"
+              href="#"
               class="top-menu_links"
             >
               <fa-icon
@@ -29,7 +30,7 @@
                 size="2x"
               />
               <div class="ml-10">Бонусы и акции</div>
-            </a>
+            </router-link>
             <router-link
               to="/contacts"
               href="#"
