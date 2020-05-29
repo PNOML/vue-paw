@@ -30,8 +30,9 @@
               />
               <div class="ml-10">Бонусы и акции</div>
             </a>
-            <a
-              href=""
+            <router-link
+              to="/contacts"
+              href="#"
               class="top-menu_links"
             >
               <fa-icon
@@ -42,7 +43,7 @@
                 <div>8 903 111 09 23</div>
                 <div class="top-menu_links_small">Прием звонков c 10:00-21:00</div>
               </div>
-            </a>
+            </router-link>
             <router-link
               to="/delivery"
               href="#"
