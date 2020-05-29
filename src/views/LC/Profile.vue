@@ -3,7 +3,7 @@
     <Header />
     <main class="purchase-container">
       <div class="main-wrapper ">
-        <Sidebar />
+        <SidebarLC />
         <div class="sale-block">
           <Navbar />
           <section class="profile">
