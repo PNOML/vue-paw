@@ -37,6 +37,12 @@ const routes = [
     component: () => import('../views/Delivery.vue')
   },
   {
+    path: '/bonuses',
+    name: 'Bonuses',
+    meta: { layout: 'main' },
+    component: () => import('../views/BonusPage.vue')
+  },
+  {
     path: '/contacts',
     name: 'Contacts',
     meta: { layout: 'main' },
