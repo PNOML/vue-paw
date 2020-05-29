@@ -59,6 +59,18 @@ const routes = [
     name: 'Profile',
     meta: { layout: 'main' },
     component: () => import('../views/LC/Profile.vue')
+  },
+  {
+    path: '/history',
+    name: 'Profile',
+    meta: { layout: 'main' },
+    component: () => import('../views/LC/OrderHistory.vue')
+  },
+  {
+    path: '/offer',
+    name: 'Profile',
+    meta: { layout: 'main' },
+    component: () => import('../views/LC/PersonalOffer.vue')
   }
 ]
 
