@@ -815,6 +815,10 @@ section.catalog {
   line-height: 1.5rem;
 }
 
+.cart-item>a {
+  color: gray;
+}
+
 .cart-item>img {
   max-width: 100px;
 }
