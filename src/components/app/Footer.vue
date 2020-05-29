@@ -89,6 +89,7 @@ export default {
     menu: [
       { title: "Главная", url: "/" },
       { title: "Товары", url: "/goods" },
+      { title: "Акции", url: "/bonuses" },
       { title: "Доставка", url: "/delivery" },
       { title: "Корзина", url: "/cart" },
       { title: "Оплата", url: "/payment" },
