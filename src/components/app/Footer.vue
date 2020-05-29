@@ -94,7 +94,7 @@ export default {
       { title: "Корзина", url: "/cart" },
       { title: "Оплата", url: "/payment" },
       { title: "Контакты", url: "/contacts" },
-      { title: "Личный кабинет", url: "/lc" }
+      { title: "Личный кабинет", url: "/profile" }
     ],
     animals: [
       { title: "Котейки", url: "/goods" },
