@@ -35,6 +35,12 @@ const routes = [
     name: 'Delivery',
     meta: { layout: 'main' },
     component: () => import('../views/Delivery.vue')
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    meta: { layout: 'main' },
+    component: () => import('../views/Cart.vue')
   }
 ]
 

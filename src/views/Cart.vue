@@ -24,10 +24,8 @@
               <div>Общая стоимость</div>
               <div>150 руб</div>
             </div>
-            <a
-              class="drop-menu"
-              href=""
-            ><i class="fas fa-trash-alt"></i>
+            <a href="">
+              <fa-icon :icon="['fas', 'trash-alt']" />
             </a>
           </div>
         </div>
