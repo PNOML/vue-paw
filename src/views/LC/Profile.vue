@@ -6,13 +6,8 @@
         <Sidebar />
         <div class="sale-block">
           <Navbar />
-          <section class="catalog">
-            <GoodsItem
-              v-for="item in GOODS"
-              :key="item.article"
-              v-bind:goods_data="item"
-              @sendArticle="showConsole"
-            />
+          <section class="profile">
+            <h1>Профиль</h1>
           </section>
         </div>
       </div>
@@ -25,9 +20,7 @@
 import Header from "@/components/app/Header";
 import Footer from "@/components/app/Footer";
 import Navbar from "@/components/app/Navbar";
-import Sidebar from "@/components/app/Sidebar";
-import GoodsItem from "@/components/app/GoodsItem";
-import { mapActions, mapGetters } from "vuex";
+import SidebarLC from "@/components/app/LC/SidebarLC";
 
 export default {
   name: "goods",
@@ -35,8 +28,7 @@ export default {
     Header,
     Footer,
     Navbar,
-    Sidebar,
-    GoodsItem
+    SidebarLC
   }
 };
 </script>
