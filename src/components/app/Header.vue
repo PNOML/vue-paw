@@ -88,7 +88,8 @@
                 size="2x"
               />
             </router-link>
-            <a
+            <router-link
+              to="/profile"
               class="user-block_links"
               href=""
             >
@@ -96,7 +97,7 @@
                 :icon="['fas', 'user']"
                 size="2x"
               />
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
