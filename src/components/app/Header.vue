@@ -76,15 +76,16 @@
             </a>
           </div>
           <div class="user-block">
-            <a
+            <router-link
+              to="/cart"
               class="user-block_links"
-              href=""
+              href="#"
             >
               <fa-icon
                 :icon="['fas', 'shopping-cart']"
                 size="2x"
               />
-            </a>
+            </router-link>
             <a
               class="user-block_links"
               href=""

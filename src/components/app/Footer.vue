@@ -90,6 +90,7 @@ export default {
       { title: "Главная", url: "/" },
       { title: "Товары", url: "/goods" },
       { title: "Доставка", url: "/delivery" },
+      { title: "Корзина", url: "/cart" },
       { title: "Оплата", url: "/payment" },
       { title: "Контакты", url: "/contacts" },
       { title: "Личный кабинет", url: "/lc" }
