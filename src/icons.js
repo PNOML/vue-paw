@@ -7,14 +7,14 @@ import {  //Brands
 import { //solid icons
   faGift, faPhoneVolume, faBars, faCat, faDog,
   faTruck, faSearch, faShoppingCart, faFish, faFeatherAlt,
-  faUser, faOtter, faBone, faPaw,
+  faUser, faOtter, faBone, faPaw, faTrashAlt
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   faGift, faPhoneVolume, faBars, faCat, faDog,
   faTruck, faSearch, faShoppingCart, faFish, faFeatherAlt,
   faUser, faOtter, faBone, faPaw, faInstagram, faVk,
-  faTelegramPlane, faWhatsapp, faViber
+  faTelegramPlane, faWhatsapp, faViber, faTrashAlt
 )
 
 Vue.component('fa-icon', FontAwesomeIcon)
