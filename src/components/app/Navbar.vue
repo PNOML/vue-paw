@@ -1,12 +1,10 @@
 <template>
   <nav class="main-menu">
     <ul>
-
       <router-link
         v-for="animal in animals"
         :key="animal.title"
         tag="li"
-        active-class="active"
         to="/goods"
       >
         <a href="#">
@@ -26,12 +24,23 @@
 export default {
   data: () => ({
     animals: [
-      { title: "Котейки", icon: ["fas", "cat"] },
-      { title: "Собакены", icon: ["fas", "dog"] },
-      { title: "Амфибии", icon: ["fas", "fish"] },
-      { title: "Парящие", icon: ["fas", "feather-alt"] },
-      { title: "Другие", icon: ["fas", "otter"] }
+      { title: "Котейки", icon: ["fas", "cat"], animalid: "cat" },
+      { title: "Собакены", icon: ["fas", "dog"], animalid: "dog" },
+      { title: "Амфибии", icon: ["fas", "fish"], animalid: "fish" },
+      { title: "Парящие", icon: ["fas", "feather-alt"], animalid: "bird" },
+      { title: "Другие", icon: ["fas", "otter"], animalid: "other" }
     ]
-  })
+  }),
+  methods: {
+    showBorder(act) {
+      console.log(act);
+    }
+  }
 };
 </script>
+
+<style scoped>
+.done {
+  border: 1px solid red;
+}
+</style>
