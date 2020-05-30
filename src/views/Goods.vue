@@ -47,7 +47,7 @@ export default {
   methods: {
     ...mapActions(["GET_GOODS_FROM_API"]),
     showConsole(data) {
-      console.log(data);
+      // console.log("data", data);
     }
   },
   mounted() {
