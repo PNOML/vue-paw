@@ -66,7 +66,7 @@
           <ul>
             <router-link
               v-for="sm in socialmedia"
-              :key="sm.icon"
+              :key="sm.icon[1]"
               tag="li"
               :to="sm.url"
               class="footer-social-media"
