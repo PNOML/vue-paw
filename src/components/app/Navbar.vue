@@ -60,9 +60,11 @@ export default {
       }
     ]
   }),
+
   methods: {
     showId(id) {
       console.log(id);
+      console.log(this.$store.getters.validCatalog);
     }
   }
 };
