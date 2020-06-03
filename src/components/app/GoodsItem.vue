@@ -29,10 +29,6 @@ export default {
       }
     }
   },
-  methods: {
-    sendDataToCart() {
-      this.$emit("sendArticle", this.goods_data.article);
-    }
-  }
+  methods: {}
 };
 </script>
