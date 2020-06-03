@@ -6,8 +6,12 @@
         :key="animal.title"
         tag="li"
         to="/goods"
+        v-bind:class="{done: animal.chosen}"
       >
-        <a href="#">
+        <a
+          href="#"
+          v-on:click="showId"
+        >
           <fa-icon
             :icon="animal.icon"
             size="2x"
@@ -24,19 +28,48 @@
 export default {
   data: () => ({
     animals: [
-      { title: "Котейки", icon: ["fas", "cat"], navbId: "cat" },
-      { title: "Собакены", icon: ["fas", "dog"], navbId: "dog" },
-      { title: "Амфибии", icon: ["fas", "fish"], navbId: "fish" },
-      { title: "Парящие", icon: ["fas", "feather-alt"], navbId: "bird" },
-      { title: "Другие", icon: ["fas", "otter"], navbId: "other" }
+      {
+        title: "Котейки",
+        icon: ["fas", "cat"],
+        navbId: "cat",
+        chosen: false
+      },
+      {
+        title: "Собакены",
+        icon: ["fas", "dog"],
+        navbId: "dog",
+        chosen: false
+      },
+      {
+        title: "Амфибии",
+        icon: ["fas", "fish"],
+        navbId: "fish",
+        chosen: false
+      },
+      {
+        title: "Парящие",
+        icon: ["fas", "feather-alt"],
+        navbId: "bird",
+        chosen: false
+      },
+      {
+        title: "Другие",
+        icon: ["fas", "otter"],
+        navbId: "other",
+        chosen: false
+      }
     ]
   }),
-  methods: {}
+  methods: {
+    showId(id) {
+      console.log(id);
+    }
+  }
 };
 </script>
 
 <style scoped>
 .done {
-  border: 1px solid red;
+  background: pink;
 }
 </style>
