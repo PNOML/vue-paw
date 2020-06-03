@@ -1,10 +1,10 @@
 export default {
-  state: {
-    goods: []
-  },
-  getters: {
-    allGoods(state) {
-      return state.goods
+  actions: {
+    async fetchGoods({ commit }) {
+      const res = await fetch("http://localhost:3000/goods");
+      const goods = await res.json();
+
+      commit('updateGoods', goods)
     }
   },
   mutations: {
@@ -12,12 +12,15 @@ export default {
       state.goods = goods;
     }
   },
-  actions: {
-    async fetchGoods(ctx) {
-      const res = await fetch("http://localhost:3000/goods");
-      const goods = await res.json();
-
-      ctx.commit('updateGoods', goods)
+  state: {
+    goods: []
+  },
+  getters: {
+    chosenGoods(state) {
+      console.log(state.goods)
+      return state.goods.filter(item => {
+        return item.navBid === 'cat' && item.sideBid === 'stern';
+      })
     }
   }
 }
