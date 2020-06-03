@@ -10,7 +10,7 @@
       >
         <a
           href="#"
-          v-on:click="showId"
+          v-on:click="showId(animal.navBid)"
         >
           <fa-icon
             :icon="animal.icon"
@@ -31,31 +31,31 @@ export default {
       {
         title: "Котейки",
         icon: ["fas", "cat"],
-        navbId: "cat",
+        navBid: "cat",
         chosen: false
       },
       {
         title: "Собакены",
         icon: ["fas", "dog"],
-        navbId: "dog",
+        navBid: "dog",
         chosen: false
       },
       {
         title: "Амфибии",
         icon: ["fas", "fish"],
-        navbId: "fish",
+        navBid: "fish",
         chosen: false
       },
       {
         title: "Парящие",
         icon: ["fas", "feather-alt"],
-        navbId: "bird",
+        navBid: "bird",
         chosen: false
       },
       {
         title: "Другие",
         icon: ["fas", "otter"],
-        navbId: "other",
+        navBid: "other",
         chosen: false
       }
     ]
