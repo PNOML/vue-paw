@@ -24,11 +24,11 @@
 export default {
   data: () => ({
     animals: [
-      { title: "Котейки", icon: ["fas", "cat"], animalid: "cat" },
-      { title: "Собакены", icon: ["fas", "dog"], animalid: "dog" },
-      { title: "Амфибии", icon: ["fas", "fish"], animalid: "fish" },
-      { title: "Парящие", icon: ["fas", "feather-alt"], animalid: "bird" },
-      { title: "Другие", icon: ["fas", "otter"], animalid: "other" }
+      { title: "Котейки", icon: ["fas", "cat"], navbId: "cat" },
+      { title: "Собакены", icon: ["fas", "dog"], navbId: "dog" },
+      { title: "Амфибии", icon: ["fas", "fish"], navbId: "fish" },
+      { title: "Парящие", icon: ["fas", "feather-alt"], navbId: "bird" },
+      { title: "Другие", icon: ["fas", "otter"], navbId: "other" }
     ]
   }),
   methods: {
