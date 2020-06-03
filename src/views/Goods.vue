@@ -8,7 +8,7 @@
           <Navbar />
           <section class="catalog">
             <GoodsItem
-              v-for="item in allGoods"
+              v-for="item in chosenGoods"
               :key="item.article"
               v-bind:goods_data="item"
             />
@@ -39,11 +39,15 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["allGoods"])
+    ...mapGetters(["chosenGoods"])
+  },
+
+  methods: {
+    ...mapActions(["fetchGoods"])
   },
 
   async mounted() {
-    this.$store.dispatch("fetchGoods");
+    this.fetchGoods();
   }
 };
 </script>
