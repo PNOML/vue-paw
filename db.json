@@ -6,23 +6,39 @@
       "weight": 10,
       "price": 100,
       "article": "I1",
-      "avalibale": true
+      "avalibale": true,
+      "navBid": "cat",
+      "sideBid": "stern"
     },
     {
       "image": "catalog-item.jpg",
       "description": "item 2",
       "weight": 10,
-      "price": 100,
+      "price": 200,
       "article": "I2",
-      "avalibale": true
+      "avalibale": true,
+      "navBid": "cat",
+      "sideBid": "stern"
     },
     {
       "image": "catalog-item.jpg",
       "description": "item 3",
-      "weight": 20,
-      "price": 200,
+      "weight": 10,
+      "price": 100,
       "article": "I3",
-      "avalibale": true
+      "avalibale": true,
+      "navBid": "dog",
+      "sideBid": "stern"
+    },
+    {
+      "image": "catalog-item.jpg",
+      "description": "item 4",
+      "weight": 10,
+      "price": 100,
+      "article": "I4",
+      "avalibale": true,
+      "navBid": "dog",
+      "sideBid": "stern"
     }
   ]
 }
