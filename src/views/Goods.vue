@@ -8,10 +8,9 @@
           <Navbar />
           <section class="catalog">
             <GoodsItem
-              v-for="item in GOODS"
+              v-for="item in allGoods"
               :key="item.article"
               v-bind:goods_data="item"
-              @sendArticle="showConsole"
             />
           </section>
         </div>
@@ -38,28 +37,34 @@ export default {
     Sidebar,
     GoodsItem
   },
-  data() {
-    return {};
-  },
+
   computed: {
-    ...mapGetters(["GOODS"])
+    ...mapGetters(["allGoods"])
   },
-  methods: {
-    ...mapActions(["GET_GOODS_FROM_API"]),
-    showConsole(data) {
-      // console.log("data", data);
-    }
-  },
-  mounted() {
-    this.GET_GOODS_FROM_API()
-      .then(res => {
-        if (res.data) {
-          console.log("Data has been gotten!");
-        }
-      })
-      .catch(e => {
-        console.log(e);
-      });
+
+  async mounted() {
+    this.$store.dispatch("fetchGoods");
   }
+
+  // computed: {
+  //   ...mapGetters(["GOODS"])
+  // },
+  // methods: {
+  //   ...mapActions(["GET_GOODS_FROM_API"]),
+  //   showConsole(data) {
+  //     // console.log("data", data);
+  //   }
+  // },
+  // mounted() {
+  //   this.GET_GOODS_FROM_API()
+  //     .then(res => {
+  //       if (res.data) {
+  //         console.log("Data has been gotten!");
+  //       }
+  //     })
+  //     .catch(e => {
+  //       console.log(e);
+  //     });
+  // }
 };
 </script>
