@@ -17,9 +17,11 @@ export default {
   },
   getters: {
     chosenGoods(state) {
-      return state.goods.filter(item => {
-        return item.navBid === 'cat' && item.sideBid === 'stern';
-      })
+      // return state.goods.filter(item => {
+      //   return item.navBid === 'cat' && item.sideBid === 'stern';
+      // })
+
+      return state.goods
     }
   }
 }
