@@ -22,6 +22,13 @@ export default {
       // })
 
       return state.goods
+    },
+
+    validCatalog(state) {
+      return state.goods.filter(item => {
+        return item.navBid === 'cat'
+      })
     }
+
   }
 }
