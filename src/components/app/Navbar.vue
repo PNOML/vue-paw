@@ -31,11 +31,7 @@ export default {
       { title: "Другие", icon: ["fas", "otter"], navbId: "other" }
     ]
   }),
-  methods: {
-    showBorder(act) {
-      console.log(act);
-    }
-  }
+  methods: {}
 };
 </script>
 
