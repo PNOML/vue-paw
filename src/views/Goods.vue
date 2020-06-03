@@ -45,26 +45,5 @@ export default {
   async mounted() {
     this.$store.dispatch("fetchGoods");
   }
-
-  // computed: {
-  //   ...mapGetters(["GOODS"])
-  // },
-  // methods: {
-  //   ...mapActions(["GET_GOODS_FROM_API"]),
-  //   showConsole(data) {
-  //     // console.log("data", data);
-  //   }
-  // },
-  // mounted() {
-  //   this.GET_GOODS_FROM_API()
-  //     .then(res => {
-  //       if (res.data) {
-  //         console.log("Data has been gotten!");
-  //       }
-  //     })
-  //     .catch(e => {
-  //       console.log(e);
-  //     });
-  // }
 };
 </script>
