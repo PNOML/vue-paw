@@ -17,7 +17,6 @@ export default {
   },
   getters: {
     chosenGoods(state) {
-      console.log(state.goods)
       return state.goods.filter(item => {
         return item.navBid === 'cat' && item.sideBid === 'stern';
       })
